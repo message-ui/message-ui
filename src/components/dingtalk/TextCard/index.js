@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.less';
 
 export default function TextCard(props) {
   const { content } = props;
