@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import TextCard from '../components/dingtalk/TextCard';
+import { TextCard } from '../';
 
 storiesOf('TextCard', module)
   .add('with content', () => <TextCard content="这个即将发布的新版本，创始人陈航（花名“无招”）称它为“红树林”。

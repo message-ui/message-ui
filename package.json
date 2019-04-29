@@ -10,8 +10,8 @@
   "scripts": {
     "start": "rollup -c rollup.config.js",
     "build": "NODE_ENV=production rollup -c rollup.config.js",
-    "storybook": "start-storybook -p 9009 -s docs",
-    "build-storybook": "build-storybook -s docs"
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook -o docs"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,8 +37,10 @@
     "@storybook/addon-links": "^5.0.11",
     "@storybook/addons": "^5.0.11",
     "@storybook/react": "^5.0.11",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "rollup": "^1.10.1",

@@ -1,1 +1,1 @@
-export TextCard from './components/dingtalk/TextCard';
+export { default as TextCard } from './components/dingtalk/TextCard';
