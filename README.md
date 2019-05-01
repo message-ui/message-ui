@@ -3,7 +3,7 @@ Message UI
 
 ## How to dev
 
-- run a storybokk for development of components 
+- run a storybook for development of components 
 
 ```bash
 npm run storybook
