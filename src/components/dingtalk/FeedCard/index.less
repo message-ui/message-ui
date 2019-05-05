@@ -1,0 +1,30 @@
+@import '../../../styles/base.less';
+
+.dingtalk-link-card {
+  .base-card;
+  text-decoration: none;
+  &-title {
+    color: @color-title;
+    font-size: @font-size-title;
+  }
+  &-content {
+    margin-top: 8px;
+    display: flex;
+  }
+  &-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &-text {
+    margin-left: 4px;
+    flex: 1;
+    color: @color-description;
+    font-size: @font-size-description;
+  }
+}
