@@ -1,0 +1,87 @@
+
+* { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+a{
+  text-decoration: none;
+  color: #38adff;
+}
+
+.msg-bubble{
+  position: relative;
+  min-height: 21px;
+  float: left;
+  clear: both;
+  padding: 5px 11px;
+  border: 1px solid #e1e0e4;
+  border-radius: 6px;
+  background-color: #fff;
+  line-height: 1.5;
+  width: auto;
+  max-width: 300px;
+  overflow: hidden;
+  transition: background-color .25s ease;
+  margin: 10px 0 0 10px;
+}
+.msg-bubble.markdown-msg{
+  color: #222;
+}
+
+.markdown-content{
+  overflow-wrap: break-word;
+}
+
+.markdown-content h1,.markdown-content h2 {
+  font-size: 14px
+}
+
+.markdown-content h5 {
+  font-size: 14px;
+  font-weight: 700
+}
+
+.markdown-content h6 {
+  font-size: 12px;
+  color: #999
+}
+
+.markdown-content blockquote {
+  border-left: 3px solid #e4e4e4;
+  padding-left: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px
+}
+
+.markdown-content strong {
+  font-weight: 700
+}
+
+.markdown-content em {
+  font-style: italic
+}
+
+.markdown-content img {
+  max-width: 100%;
+  margin: 5px 0
+}
+
+.markdown-content img.no-size {
+  width: 10px;
+  height: 10px;
+  visibility: hidden
+}
+
+.markdown-content p {
+  color: #666
+}
+
+.markdown-content li {
+  list-style: disc inside
+}
+
+.markdown-content li p {
+  color: #222
+}

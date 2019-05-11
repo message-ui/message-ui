@@ -1,30 +1,79 @@
 @import '../../../styles/base.less';
 
-.dingtalk-link-card {
+.dingtalk-feed-card {
   .base-card;
   text-decoration: none;
-  &-title {
-    color: @color-title;
-    font-size: @font-size-title;
-  }
-  &-content {
-    margin-top: 8px;
-    display: flex;
-  }
-  &-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    img {
-      width: 100%;
-      height: auto;
+  width: 355px;
+  max-width: 355px;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  &-top {
+    width: 100%;
+    background:  50% no-repeat;
+    height: 200px;
+    cursor: pointer;
+    &-cover {
+      height: 100%;
+      background: url('https://g.alicdn.com/DingTalkWeb/web/3.8.1/assets/webpack-img/shadow-cover.png') 50% repeat-x;
+      display: flex;
+      align-items: flex-end;
+      p {
+        margin: 12px 11px;
+        font-size: 17px;
+        color: #fff;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+      }
     }
   }
-  &-text {
-    margin-left: 4px;
-    flex: 1;
-    color: @color-description;
-    font-size: @font-size-description;
+  ul {
+    padding: 0 0 5px;
+    li {
+      margin: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+  }
+  &-item {
+    list-style: none;
+    padding: 0 11px;
+    &-content{
+      border-bottom: none;
+      cursor: pointer;
+      padding: 5px 0;
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      &-title{
+        padding-right: 10px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        p {
+          padding-bottom: 2px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          color: #222;
+        }
+      }
+      &-pic{
+        flex: 0 0 50px;
+        background: 50% no-repeat;
+        background-size: cover;
+      }
+    }
   }
 }

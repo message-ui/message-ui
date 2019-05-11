@@ -2,42 +2,46 @@ import React from 'react';
 import './index.less';
 
 export default function FeedCard(props) {
-  const { feeds } = props;
-  // console.log(feeds[0]);
-  const topFeed = feeds[0];
-
-
+  const { source:feeds } = props;
+  const topFeed = feeds.length > 0 ? feeds[0] : {};
+  const subFeeds = feeds.slice(1,feeds.length);
+  // 渲染子列表
   function renderSubFeeds (feeds) {
     return feeds.map((feed,key)=>{
       const { title, messageURL, picURL} = feed
       return (
-        <a className="dingtalk-feed-card"  href={messageURL} key={key}>
+        <a href={messageURL} key={key}>
           <li className="dingtalk-feed-card-item">
-              <div className="dingtalk-feed-card-content">
-                  <div className="dingtalk-feed-card-title">
+              <div className="dingtalk-feed-card-item-content">
+                  <div className="dingtalk-feed-card-item-content-title">
                       <p>{title}</p>
                   </div>
-                  <div className="dingtalk-feed-card-pic" style={{'backgroundImage':'url('+picURL+')'}}></div>
+                  <div className="dingtalk-feed-card-item-content-pic" style={{'backgroundImage':'url('+picURL+')'}}></div>
               </div>
           </li>
         </a>
       )
     })
   }
-
+  // 渲染顶部feeds
+  function renderTopFeed(feed){
+    return (        
+      <a  href={feed.messageURL}>
+        <div className="dingtalk-feed-card-top" style={{backgroundImage:'url('+ feed.picURL+')'}}>
+            <div className="dingtalk-feed-card-top-cover">
+                <p className="dingtalk-feed-card-top-title">{feed.title}</p>
+            </div>
+        </div>
+      </a>
+    )
+  }
 
   return (
-    <div className="dingtalk-link-card" >
-        <a className="dingtalk-feed-card-top" href={topFeed.messageURL}>
-            <div className="dingtalk-feed-card-top-content" style={{'backgroundImage':'url('+ topFeed.picURL+')'}}>
-                <div className="dingtalk-feed-card-top-pic">
-                    <p className="dingtalk-feed-card-top-title">{topFeed.title}</p>
-                </div>
-            </div>
-        </a>
-        { feeds.length>0 &&
+    <div className="dingtalk-feed-card" >
+        {renderTopFeed(topFeed)}
+        { subFeeds.length>0 &&
           <ul>
-            { renderSubFeeds(feeds) }
+            { renderSubFeeds(subFeeds) }
           </ul>
         }
     </div>
