@@ -2,9 +2,11 @@ import React from 'react';
 import './index.less';
 
 export default function FeedCard(props) {
-  const { source:feeds } = props;
-  const topFeed = feeds.length > 0 ? feeds[0] : {};
-  const subFeeds = feeds.slice(1,feeds.length);
+  const { source } = props;
+  const { feedCard, msgtype, at } = source;
+  const { links } = feedCard;
+  const topFeed = links.length > 0 ? links[0] : {};
+  const subFeeds = links.slice(1,links.length);
   // 渲染子列表
   function renderSubFeeds (feeds) {
     return feeds.map((feed,key)=>{
@@ -25,11 +27,12 @@ export default function FeedCard(props) {
   }
   // 渲染顶部feeds
   function renderTopFeed(feed){
+    const { title, messageURL, picURL} = feed
     return (        
-      <a  href={feed.messageURL}>
-        <div className="dingtalk-feed-card-top" style={{backgroundImage:'url('+ feed.picURL+')'}}>
+      <a  href={messageURL}>
+        <div className="dingtalk-feed-card-top" style={{backgroundImage:'url('+ picURL+')'}}>
             <div className="dingtalk-feed-card-top-cover">
-                <p className="dingtalk-feed-card-top-title">{feed.title}</p>
+                <p className="dingtalk-feed-card-top-title">{title}</p>
             </div>
         </div>
       </a>

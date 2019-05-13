@@ -2,7 +2,9 @@ import React from 'react';
 import './index.less';
 
 export default function LinkCard(props) {
-  const { title, text, messageUrl, picUrl } = props;
+  const { source } = props;
+  const { link, msgtype, at } = source;
+  const { title, text, messageUrl, picUrl } = link;
   return (
     <a className="dingtalk-link-card" href={messageUrl} target="_blank">
       <div className="dingtalk-link-card-title">{title}</div>

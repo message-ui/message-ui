@@ -1,15 +1,62 @@
-export const feeds = [
-    {
-        "title": "时代的火车向前开",
-        "messageURL": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI",
-        "picURL": "https://cdn.nlark.com/yuque/0/2019/png/155457/1555929360981-b462ce07-621d-4e97-9f75-dbf4acd7b5ff.png"
-    },
-    {
-        "title": "时代的火车向前开2",
-        "messageURL": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI",
-        "picURL": "https://cdn.nlark.com/yuque/0/2019/png/155457/1555929360981-b462ce07-621d-4e97-9f75-dbf4acd7b5ff.png"
+
+export const Text = {
+    "msgtype": "text", 
+    "text": {
+        "content": "我就是我, 是不一样的烟火@156xxxx8827"
+    }, 
+    "at": {
+        "atMobiles": [
+            "156xxxx8827", 
+            "189xxxx8325"
+        ], 
+        "isAtAll": false
     }
-];
+}
+
+
+export const link = {
+    "msgtype": "link", 
+    "link": {
+        "text": "这个即将发布的新版本，创始人陈航（花名“无招”）称它为“红树林”"+
+                "而在此之前，每当面临重大升级，产品经理们都会取一个应景的代号，这一次，为什么是“红树林”？", 
+        "title": "时代的火车向前开", 
+        "picUrl": "", 
+        "messageUrl": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI"
+    },
+    "at": {
+        "atMobiles": [
+            "156xxxx8827", 
+            "189xxxx8325"
+        ], 
+        "isAtAll": false
+    }
+}
+
+
+export const feeds = {
+    "feedCard": {
+        "links": [
+            {
+                "title": "时代的火车向前开",
+                "messageURL": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI",
+                "picURL": "https://cdn.nlark.com/yuque/0/2019/png/155457/1555929360981-b462ce07-621d-4e97-9f75-dbf4acd7b5ff.png"
+            },
+            {
+                "title": "时代的火车向前开2",
+                "messageURL": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI",
+                "picURL": "https://cdn.nlark.com/yuque/0/2019/png/155457/1555929360981-b462ce07-621d-4e97-9f75-dbf4acd7b5ff.png"
+            }
+        ]
+    }, 
+    "msgtype": "feedCard",
+    "at": {
+        "atMobiles": [
+            "156xxxx8827", 
+            "189xxxx8325"
+        ], 
+        "isAtAll": false
+    }
+}
 
 export const markdown = {
     "msgtype": "markdown",
@@ -40,7 +87,14 @@ export const Action1 = {
         "singleTitle": "阅读全文",
         "singleURL": "https://www.dingtalk.com/"
     },
-    "msgtype": "actionCard"
+    "msgtype": "actionCard",
+    "at": {
+        "atMobiles": [
+            "156xxxx8827", 
+            "189xxxx8325"
+        ], 
+        "isAtAll": false
+    }
 }
 
 
@@ -63,5 +117,12 @@ export const Action2 = {
             }
         ]
     },
-    "msgtype": "actionCard"
+    "msgtype": "actionCard",
+    "at": {
+        "atMobiles": [
+            "156xxxx8827", 
+            "189xxxx8325"
+        ], 
+        "isAtAll": false
+    }
 }
