@@ -11,13 +11,13 @@ export default function ActionCard(props) {
   function renderActionLink() {
     return (
       <div className=" msg-bubble msg-action-card">
-        <a className="card-link-container" href={singleURL}>
+        <a className="card-link-container" href={singleURL} target="_blank">
           <div className="markdown-content">
             <ReactMarkdown source={text} />
           </div>
         </a>
         <div className="single-btn">
-          <a className="card-link-container" href={singleURL}>
+          <a className="card-link-container" href={singleURL} target="_blank">
             <p className="single-feed-title">{singleTitle}<i className=" img-text-icon iconfont">></i></p>
           </a>
         </div>
@@ -36,7 +36,7 @@ export default function ActionCard(props) {
         <div className={ btnOrientation === '1' ? 'actions-container horizontal' : 'actions-container vertical'} >
         {btns && btns.map((i,k)=>{
             return (<p className="action-btn" key={k}>
-              <a href={i.actionURL}>{ i.title }</a>
+              <a href={i.actionURL} target="_blank">{ i.title }</a>
             </p>)
           }
         )}
