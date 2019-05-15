@@ -2,29 +2,29 @@
 
 .dingtalk-action-card {
   width: auto;
-  font-size:14px;
-  margin-top:10px;
-  .msg-bubble.msg-action-card{
+  font-size: 14px;
+  margin-top: 10px;
+  .msg-bubble.msg-action-card {
     width: 355px;
     max-width: 355px;
     box-sizing: border-box;
     padding: 0;
     overflow: visible;
-    float: none!important;
+    float: none !important;
     // margin: 0 auto;
-    .card-link-container{
+    .card-link-container {
       margin: 0;
       padding: 0;
       border: 0;
       font: inherit;
       font-size: 100%;
       vertical-align: baseline;
-      .markdown-content{
+      .markdown-content {
         box-sizing: border-box;
         padding: 0 0 8px;
         cursor: pointer;
         overflow-wrap: break-word;
-        img:first-child{
+        img:first-child {
           max-width: 100%;
           width: 353px;
           height: 200px;
@@ -32,24 +32,24 @@
           border-radius: 5px 5px 0 0;
           margin: 0;
         }
-        p{
+        p {
           color: #666;
-          margin:0;
+          margin: 0;
         }
       }
     }
-    .single-btn{
+    .single-btn {
       border-top: 1px solid #e4e4e4;
       cursor: pointer;
       margin: 0 12px;
-      .card-link-container{
+      .card-link-container {
         color: initial;
-        .single-feed-title{
-          margin:0;
+        .single-feed-title {
+          margin: 0;
           padding: 7px 0;
           position: relative;
           color: #333;
-          .img-text-icon{
+          .img-text-icon {
             font-weight: 900;
             color: #999;
             position: absolute;
@@ -58,13 +58,13 @@
           }
         }
       }
-      a{
+      a {
         text-decoration: none;
       }
     }
-
   }
-  .msg-bubble{
+
+  .msg-bubble {
     position: relative;
     min-height: 21px;
     float: left;
@@ -77,26 +77,27 @@
     width: auto;
     max-width: 300px;
     overflow: hidden;
-    -webkit-transition: background-color .25s ease;
-    -moz-transition: background-color .25s ease;
-    transition: background-color .25s ease;
-    .img-msg{
+    -webkit-transition: background-color 0.25s ease;
+    -moz-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+    .img-msg {
       max-width: 230px;
       line-height: 0;
-      padding: 2px 2px 3px!important;
-      background: #fff!important;
-      border-color: #e1e0e4!important;
+      padding: 2px 2px 3px !important;
+      background: #fff !important;
+      border-color: #e1e0e4 !important;
       overflow: visible;
       img {
         max-width: 230px;
         cursor: zoom-in;
         cursor: -webkit-zoom-in;
-        border-radius: 4px
+        border-radius: 4px;
       }
     }
   }
-  .iconfont{
-    font-family: iconfont!important;
+  
+  .iconfont {
+    font-family: iconfont !important;
     font-size: 18px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -107,44 +108,44 @@
     -ms-user-select: none;
     user-select: none;
   }
-  .actions-container{
+  .actions-container {
     border-top: 1px solid #e4e4e4;
     display: flex;
     min-width: 0;
     margin: 0 12px;
-    p{
-      margin:0;
+    p {
+      margin: 0;
     }
-    .action-btn{
+    .action-btn {
       flex: 1;
       text-align: center;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       word-wrap: normal;
-      a{
+      a {
         text-decoration: none;
         color: #38adff;
       }
     }
   }
-  .actions-container.horizontal{
+  .actions-container.horizontal {
     flex-direction: row;
-    .action-btn{
+    .action-btn {
       margin: 7px 0;
       border-right: 1px solid #e4e4e4;
     }
-    .action-btn:last-child{
+    .action-btn:last-child {
       border-right: none;
     }
   }
-  .actions-container.vertical{
+  .actions-container.vertical {
     flex-direction: column;
-    .action-btn{
+    .action-btn {
       padding: 7px 0;
       border-bottom: 1px solid #e4e4e4;
     }
-    .action-btn:last-child{
+    .action-btn:last-child {
       border-bottom: none;
     }
   }

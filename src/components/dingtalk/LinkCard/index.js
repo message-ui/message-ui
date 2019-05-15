@@ -17,5 +17,5 @@ export default function LinkCard(props) {
         </div>
       </div>
     </a>
-  )
+  );
 }

@@ -7,5 +7,5 @@ export default function TextCard(props) {
   const { content } = text;
   return (
     <div className="dingtalk-text-card">{content}</div>
-  )
+  );
 }

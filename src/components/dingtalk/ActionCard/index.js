@@ -1,6 +1,6 @@
 import React from 'react';
-import './index.less';
 import ReactMarkdown from 'react-markdown';
+import './index.less';
 
 export default function ActionCard(props) {
   const { source } = props;
